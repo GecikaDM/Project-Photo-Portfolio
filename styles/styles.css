@@ -78,8 +78,6 @@ section {
 
 .active {
   visibility: visible;
-  -webkit-animation: showUp 2s ease-in-out;
-          animation: showUp 2s ease-in-out;
 }
 
 @-webkit-keyframes showUp {
@@ -161,4 +159,23 @@ nav a.contact-link:after {
 
 .active-btn {
   color: var(--color-yellow);
+}
+
+/* header content */
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.name {
+  letter-spacing: 0.3rem;
+}
+
+img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+span {
+  letter-spacing: 0;
 }/*# sourceMappingURL=styles.css.map */
