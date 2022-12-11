@@ -53,30 +53,36 @@ section {
 
 
 .sec1 {
-  display: none;
+  visibility: hidden;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 .sec2 {
-  display: none;
+  visibility: hidden;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 .sec3 {
-  display: none;
+  visibility: hidden;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 .sec4 {
-  display: none;
+  visibility: hidden;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 .sec5 {
-  display: none;
+  visibility: hidden;
   transform: translateY(0) scale(1);
-  
 } 
+
+.active {
+  visibility: visible;
+  animation: showUp 2s ease-in-out;
+}
+
+@keyframes showUp {
+  0%  {transform: translateY(-100%) scaleY(0);
+  }
+  100% {transform: translateY(0) scaleY(1);}
+}
 
 //navbar
 
