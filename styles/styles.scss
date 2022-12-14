@@ -173,15 +173,38 @@ nav {
 .header-content {
   display: grid;
   grid-template-columns: (repeat(2, 1fr));
+  height: 100vh;
+}
+.header-left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  border-radius: 50%;
+  width: 30%;
+}
+.img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header-right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .name {
   letter-spacing: 0.3rem;
 }
 
-img{
-  border-radius: 50%;
-  width: 50%;
+.introduction {
+  width: 500px;
 }
 
 span {
