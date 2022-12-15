@@ -13,11 +13,12 @@
   --color-yellow: #ffd700;
   --color-grey1: #4b4b4b;
   --br-sm-2: 14px;
+  --fontFamily: 'Montserrat', sans-serif;
 }
 
 body {
   background-color: var(--color-primary);
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--fontFamily);
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all .4s ease-in-out;
@@ -89,7 +90,7 @@ section {
 nav {
   position: fixed;
   z-index: 10;
-  top: 50%;
+  top: 40%;
   right: 3%;
   display: flex;
   flex-direction: column;
@@ -121,6 +122,7 @@ nav {
         &:after {
           opacity: 1;
         }
+        font-weight: 700;
       }
 
       &:after {
@@ -174,39 +176,54 @@ nav {
   display: grid;
   grid-template-columns: (repeat(2, 1fr));
   height: 100vh;
-}
-.header-left-side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+    .header-left-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .img-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .profil-img{
+          border-radius: 50%;
+          width: 30%;
+          animation: App-logo-spin  1s ease-in;
+
+        @keyframes App-logo-spin {
+          from {
+            transform: rotateY(-180deg);
+          }
+          to {
+            transform: rotateY(180deg);
+          }
+          }
+        }
+      }
+  }
+
+      .header-right-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 18rem;
+
+         .name {
+            letter-spacing: 0.3rem;
+
+            span {
+              letter-spacing: 0;
+              color: var(--color-yellow);
+            }
+         }
+          p.introduction {
+            margin: 1.5rem 0;
+            line-height: 2rem;
+            text-justify: auto;
+          }
+      }
 }
 
-img{
-  border-radius: 50%;
-  width: 30%;
-}
-.img-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.header-right-side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.name {
-  letter-spacing: 0.3rem;
-}
-
-.introduction {
-  width: 500px;
-}
-
-span {
-  letter-spacing: 0;
-}
