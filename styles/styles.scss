@@ -54,28 +54,28 @@ section {
 
 
 .sec1 {
-  visibility: hidden;
+  display: none;
   transform: translateY(0) scale(1);
 }
 .sec2 {
-  visibility: hidden;
+  display: none;
   transform: translateY(0) scale(1);
 }
 .sec3 {
-  visibility: hidden;
+  display: none;
   transform: translateY(0) scale(1);
 }
 .sec4 {
-  visibility: hidden;
+  display: none;
   transform: translateY(0) scale(1);
 }
 .sec5 {
-  visibility: hidden;
+  display: none;
   transform: translateY(0) scale(1);
 } 
 
 .active {
-  visibility: visible;
+  display: block;
   //animation: showUp 2s ease-in-out;
 }
 
