@@ -219,4 +219,53 @@ nav a.contact-link:after {
   margin: 1.5rem 0;
   line-height: 2rem;
   text-justify: auto;
+}
+
+/* about section*/
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.main-title h2 span {
+  color: var(--color-yellow);
+}
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey1);
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3.5rem 0 5rem 0;
+}
+.about-container .about-right-side .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-container .about-right-side .img1 {
+  -webkit-clip-path: ellipse(50% 35%);
+          clip-path: ellipse(50% 35%);
+  width: 35%;
+  align-self: center;
+}
+.about-container .about-right-side .img2 {
+  width: 35%;
+  filter: grayscale(10);
+  -webkit-clip-path: ellipse(50% 45%);
+          clip-path: ellipse(50% 45%);
+  align-self: center;
 }/*# sourceMappingURL=styles.css.map */
