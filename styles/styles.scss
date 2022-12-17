@@ -303,16 +303,14 @@ nav {
         height: 100%;
       }
      } 
-  
   }
-    
-.category-row {
-  float: left;
-  width: 10%;
 
-  >img {
-    width: 100%;
-  }
+
+.caption-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
 }
 
 
