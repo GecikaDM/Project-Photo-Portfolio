@@ -286,6 +286,14 @@ nav a.contact-link:after {
   height: 100%;
 }
 
+.category-row {
+  float: left;
+  width: 10%;
+}
+.category-row > img {
+  width: 100%;
+}
+
 /* independants components*/
 .main-title {
   text-align: center;
