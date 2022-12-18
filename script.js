@@ -6,7 +6,9 @@ const mainContent = document.querySelector(".main-content");
 
 /* modal variables*/
 const modal = document.getElementById('modal');
-const btn = document.querySelector('.wildlife');
+const btnCategory = document.querySelectorAll('.btn-open');
+console.log(btnCategory);
+const closeModal = document.querySelector('.close');
 
 
 
@@ -55,14 +57,23 @@ pageTransition();
 
 /* modal slide open*/
 
-btn.addEventListener('click', () => {
-  modal.style.display = "block";
-});
+
+btnCategory.forEach(btn => {
+  btn.addEventListener('click', () => {
+    modal.style.display = "block";
+  });
+})
+
+
 
 window.addEventListener('click', (e) => {
   if(e.target == modal) {
     modal.style.display = "none"
   }
+});
+
+closeModal.addEventListener('click', ()=> {
+  modal.style.display = "none";
 })
 
 
