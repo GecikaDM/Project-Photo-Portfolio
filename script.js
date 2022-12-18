@@ -4,6 +4,21 @@ const navbarItem = document.querySelectorAll(".navbar-item");
 const mainContent = document.querySelector(".main-content");
 
 
+/* modal variables*/
+const modal = document.getElementById('modal');
+const btn = document.querySelector('.wildlife');
+
+
+
+/* variables slides*/
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const images = document.querySelector('.slides-container').children;
+const totalSlides = images.length;
+
+
+
 function pageTransition() {
     for (let i = 0; i  < navbarItem.length; i++) {
     navbarItem[i].addEventListener("click", function() {
@@ -36,3 +51,50 @@ function pageTransition() {
   });
 }
 pageTransition();
+
+
+/* modal slide open*/
+
+btn.addEventListener('click', () => {
+  modal.style.display = "block";
+});
+
+window.addEventListener('click', (e) => {
+  if(e.target == modal) {
+    modal.style.display = "none"
+  }
+})
+
+
+/* modal slides images*/
+
+let index = 0;
+
+prev.addEventListener('click', () => {
+  nextSlide('prev');
+});
+
+next.addEventListener('click', () => {
+  nextSlide('next');
+});
+
+function nextSlide(direction) {
+  if(direction == 'next') {
+    index++;
+    if(index == totalSlides) {
+      index = 0;
+    }
+  }else {
+    if(index == 0) {
+      index = totalSlides -1;
+    }else {
+      index--;
+    }
+  }
+  for(let i = 0; i < images.length; i++) {
+    images[i].classList.remove('main');
+    //console.log(images[i]);
+  }
+  images[index].classList.add('main');
+};
+

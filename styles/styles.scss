@@ -286,7 +286,6 @@ nav {
   }
 }
 
-
 .categories-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -294,7 +293,7 @@ nav {
   text-align: center;
   margin-top: 5rem;
 
-    .category {
+    .slides {
       border: 1px solid var(--color-white);
       height: 300px;
 
@@ -314,6 +313,87 @@ nav {
 }
 
 
+/* modal container*/ 
+
+.modal {
+  display: none;
+  position: relative;
+  bottom: 350px;
+}
+
+.modal-container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+
+  span {
+    float: right;
+    color: var(--color-grey1);
+    background-color: var(--color-yellow);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 5px;
+    cursor: pointer;
+  }
+   
+  .nav-btn-modal .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 1rem;
+    top: 50%;
+    left: 1rem;
+    font-weight: 700;
+  }
+  .nav-btn-modal .next {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 10px;
+    font-size: 1rem;
+  }
+
+ 
+  .slide {
+    position: absolute;
+    display: none;
+  }
+
+  .main {
+    display: block;
+  }
+  .img-modal {
+    width: 100%;
+    border:3px solid white;
+    transition: all 0.3s ease
+  }
+
+}
+
+.prev, 
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-grey1);
+    color: var(--color-white);
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-yellow);
+      transition: 0.3s;
+    }
+}
 
 /* independants components*/
 

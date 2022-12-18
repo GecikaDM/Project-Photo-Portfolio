@@ -59,18 +59,18 @@
       <div class="portfolio-container">
         <div class="btn-container">
           <button class="all">show all</button>
-          <button class="nature">nature</button>
-          <button class="wildlife">wildlife</button>
-          <button class="towns">towns</button>
+          <button class="btn-open nature">nature</button>
+          <button class="btn-open wildlife">wildlife</button>
+          <button class="btn-open towns">towns</button>
         </div>
         <div class="categories-container">
-          <div class="category">
+          <div class="slides">
             <img class="img-slide" src="./assets/slides/rinhoceros.jpg" alt="rinhoceros">
           </div>
-          <div class="category">
+          <div class="slides">
             <img class="img-slide" src="./assets/slides/woodBrume.jpg" alt="wood-et-brume">
           </div>
-          <div class="category">
+          <div class="slides">
             <img class="img-slide" src="./assets/slides/nycity.jpg" alt="newyork-city">
           </div>
         </div>
@@ -79,6 +79,34 @@
           <p class="title">Nature</p>
           <p class="title">Towns</p>
         </div>
+
+        <!-- modal slides-->
+    
+        <div id="modal" class="modal">
+          <div class="modal-container">
+            <span class="close">x</span>
+            <div class="slides-container">
+              <div class="slide main">
+                <img class="img-modal" src="./assets/slides/bear.png" alt="bear">
+              </div>
+              <div class="slide">
+                  <img class="img-modal"src="./assets/slides/lions.png" alt="lions">
+              </div>
+                <div class="slide">
+                  <img class="img-modal"src="./assets/slides/elephant.png" alt="elephant">
+              </div>
+                <div class="slide">
+                  <img class="img-modal"src="./assets/slides/biche.png" alt="biche">
+              </div>
+            </div>
+
+          <!-- modal navigation btn -->
+
+            <div class="nav-btn-modal">
+              <button class="prev nav-btn"><</button>
+              <button class="next nav-btn">></button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
