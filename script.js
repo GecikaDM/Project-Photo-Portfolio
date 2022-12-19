@@ -5,7 +5,7 @@ const mainContent = document.querySelector(".main-content");
 
 
 /* modal variables*/
-const modal = document.querySelector('.modal');
+const modal = document.querySelectorAll('.modal');
 /* const btnCategory = document.querySelectorAll('.btn-open');
 //console.log(btnCategory); */
 const openEls = document.querySelectorAll('[data-open]');
@@ -83,9 +83,15 @@ window.addEventListener('click', (e) => {
   }
 });
 
-closeModal.addEventListener('click', ()=> {
-  modal.style.display = "none";
-})
+
+
+closeModal.forEach(closeUp => {
+  closeUp.addEventListener('click', function() {
+    const closeUpId = this.dataset.close;
+    console.log(closeUpId);
+    document.getElementById(closeUpId).style.display = "none";
+  });
+});
 
 
 /* modal slides images*/
