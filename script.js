@@ -5,10 +5,13 @@ const mainContent = document.querySelector(".main-content");
 
 
 /* modal variables*/
-const modal = document.getElementById('modal');
-const btnCategory = document.querySelectorAll('.btn-open');
-console.log(btnCategory);
-const closeModal = document.querySelector('.close');
+const modal = document.querySelector('.modal');
+/* const btnCategory = document.querySelectorAll('.btn-open');
+//console.log(btnCategory); */
+const openEls = document.querySelectorAll('[data-open]');
+console.log(openEls);
+const closeModal = document.querySelectorAll('.close-modal');
+console.log(closeModal);
 
 
 
@@ -58,11 +61,19 @@ pageTransition();
 /* modal slide open*/
 
 
-btnCategory.forEach(btn => {
+/* btnCategory.forEach(btn => {
   btn.addEventListener('click', () => {
     modal.style.display = "block";
   });
-})
+}) */
+
+openEls.forEach(els => {
+  els.addEventListener('click', function() {
+    const modalId = this.dataset.open;
+    console.log(modalId);
+    document.getElementById(modalId).style.display = "block";
+  });
+});
 
 
 

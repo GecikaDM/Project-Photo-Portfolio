@@ -59,16 +59,16 @@
       <div class="portfolio-container">
         <div class="btn-container">
           <button class="all">show all</button>
-          <button class="btn-open nature">nature</button>
-          <button class="btn-open wildlife">wildlife</button>
-          <button class="btn-open towns">towns</button>
+          <button class="btn-open nature" data-open="modal-nature">nature</button>
+          <button class="btn-open wildlife" data-open="modal-widlife">wildlife</button>
+          <button class="btn-open towns" data-open="modal-towns">towns</button>
         </div>
         <div class="categories-container">
           <div class="slides">
             <img class="img-slide" src="./assets/slides/rinhoceros.jpg" alt="rinhoceros">
           </div>
           <div class="slides">
-            <img class="img-slide" src="./assets/slides/woodBrume.jpg" alt="wood-et-brume">
+            <img class="img-slide" src="./assets/slides/nature/woodBrume.jpg" alt="wood-et-brume">
           </div>
           <div class="slides">
             <img class="img-slide" src="./assets/slides/nycity.jpg" alt="newyork-city">
@@ -80,11 +80,40 @@
           <p class="title">Towns</p>
         </div>
 
-        <!-- modal slides-->
+        <!-- modal slide1-->
     
-        <div id="modal" class="modal">
+        <div id="modal-nature" class="modal">
           <div class="modal-container">
-            <span class="close">x</span>
+            <span class="close-modal">x</span>
+            <div class="slides-container">
+              <div class="slide main">
+                <img class="img-modal" src="./assets/slides/nature/mountains.png" alt="mountains">
+              </div>
+              <div class="slide">
+                   <img class="img-modal" src="./assets/slides/nature/seaside.png" alt="seaside">
+              </div>
+                <div class="slide">
+                  <img class="img-modal" src="./assets/slides/nature/woodBrume.jpg" alt="wood-brume">
+              </div>
+                <div class="slide">
+                  <img class="img-modal" src="./assets/slides/nature/sunrise.png" alt="sunrise">
+              </div>
+            </div>
+
+          <!-- modal navigation btn -->
+
+            <div class="nav-btn-modal">
+              <button class="prev nav-btn"><</button>
+              <button class="next nav-btn">></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal slide2-->
+
+          <div id="modal-wildlife" class="modal">
+          <div class="modal-container">
+            <span class="close-modal">x</span>
             <div class="slides-container">
               <div class="slide main">
                 <img class="img-modal" src="./assets/slides/bear.png" alt="bear">
@@ -100,7 +129,7 @@
               </div>
             </div>
 
-          <!-- modal navigation btn -->
+            <!-- modal navigation btn -->
 
             <div class="nav-btn-modal">
               <button class="prev nav-btn"><</button>
@@ -108,6 +137,39 @@
             </div>
           </div>
         </div>
+
+
+         <!-- modal slide-->
+        
+          <div id="modal-towns" class="modal">
+          <div class="modal-container">
+            <span class="close-modal">x</span>
+            <div class="slides-container">
+              <div class="slide main">
+                <img class="img-modal" src="./assets/slides/bear.png" alt="bear">
+              </div>
+              <div class="slide">
+                   <img class="img-modal" src="./assets/slides/lions.png" alt="lions">
+              </div>
+                <div class="slide">
+                  <img class="img-modal" src="./assets/slides/elephant.png" alt="elephant">
+              </div>
+                <div class="slide">
+                  <img class="img-modal" src="./assets/slides/biche.png" alt="biche">
+              </div>
+            </div>
+
+            <!-- modal navigation btn -->
+
+            <div class="nav-btn-modal">
+              <button class="prev nav-btn"><</button>
+              <button class="next nav-btn">></button>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </section>
     <section id="blog" class="section sec4 blogs">
