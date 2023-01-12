@@ -20,8 +20,9 @@ const prevBtns = document.querySelectorAll('.prev');
 const nextBtns = document.querySelectorAll('.next');
 const images = document.getElementsByClassName('slide');
 console.log(images);
+
 const totalSlides = images.length;
-console.log(totalSlides)
+//console.log(totalSlides)
 
 
 
@@ -66,7 +67,7 @@ pageTransition();
 openEls.forEach(els => {
   els.addEventListener('click', function() {
     const modalId = this.dataset.open;
-    //console.log(modalId);
+    console.log(modalId);
     document.getElementById(modalId).style.display = "block";
   });
 });
@@ -92,7 +93,8 @@ closeModal.forEach(closeUp => {
 
 /* modal slides images*/
  
- let index = 0;
+let index = 0;
+
 
 prevBtns.forEach(prev => {
   prev.addEventListener('click', () => {
@@ -106,7 +108,7 @@ nextBtns.forEach(next => {
   next.addEventListener('click', () => {
   nextSlide('next');
   //console.log();
-});
+  });
 });
 
 
@@ -124,15 +126,15 @@ function nextSlide(direction) {
             index--;
           } 
         }
-
-      for(let i = 0; i < images.length; i++) {
+    for(let i = 0; i < images.length; i++) {
         images[i].classList.remove('main');
-        console.log(images[i]);
-        }
+        //console.log(images[i]);
+    }
         images[index].classList.add('main');
-        console.log(images[index])
-        
-      };
+        //console.log(images[index]) 
+ 
+};
+
 
  
 
