@@ -19,7 +19,7 @@ const closeModal = document.querySelectorAll('.close-modal');
 const prevBtns = document.querySelectorAll('.prev');
 const nextBtns = document.querySelectorAll('.next');
 const images = document.getElementsByClassName('slide');
-console.log(images);
+//console.log(images);
 
 const totalSlides = images.length;
 //console.log(totalSlides)
@@ -81,7 +81,6 @@ window.addEventListener('click', (e) => {
 });
 
 
-
 closeModal.forEach(closeUp => {
   closeUp.addEventListener('click', function() {
     const closeUpId = this.dataset.close;
@@ -93,48 +92,35 @@ closeModal.forEach(closeUp => {
 
 /* modal slides images*/
  
-let index = 0;
+let slideIndex = [1,1,1];
+console.log(slideIndex)
+
+let slideId = ["mySlides1", "mySlides2", "mySlides3"];
+console.log(slideId);
+
+nextSlide(1, 0);
+nextSlide(1, 1);
+nextSlide(1, 2);
 
 
-prevBtns.forEach(prev => {
-  prev.addEventListener('click', () => {
-  nextSlide('prev');
-  //console.log(prev);
-    });
-  });
+/* prev next */ 
+function plusSlides(n, no) {
+  nextSlide(slideIndex[no] += n, no);
+}
 
 
-nextBtns.forEach(next => {
-  next.addEventListener('click', () => {
-  nextSlide('next');
-  //console.log();
-  });
-});
-
-
-function nextSlide(direction) {
-
-        if(direction == 'next') {
-          index++;
-        if(index == totalSlides) {
-            index = 0;
-          }
-        }else {
-          if(index == 0) {
-            index = totalSlides -1;
-          }else {
-            index--;
-          } 
-        }
-    for(let i = 0; i < images.length; i++) {
-        images[i].classList.remove('main');
-        //console.log(images[i]);
-    }
-        images[index].classList.add('main');
-        //console.log(images[index]) 
- 
-};
-
-
- 
+function nextSlide(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {
+    slideIndex[no] = 1;
+  }    
+  if (n < 1) {
+    slideIndex[no] = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
 
