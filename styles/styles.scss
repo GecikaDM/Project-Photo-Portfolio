@@ -286,6 +286,10 @@ nav {
   }
 }
 
+button.btn-open.btn:active {
+  transform: scale(0.9);
+}
+
 .categories-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -312,6 +316,17 @@ nav {
     text-align: center;
 }
 
+.slides-container {
+  animation: appear 350ms ease-in;
+  max-width: 600px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
 
 /* modal container*/ 
 
@@ -370,7 +385,7 @@ nav {
   }
   .img-modal {
     width: 100%;
-    border:3px solid white;
+    border:1px solid white;
     transition: all 0.3s ease
   }
 
