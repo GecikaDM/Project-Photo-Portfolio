@@ -22,7 +22,7 @@ const images = document.getElementsByClassName('slide');
 //console.log(images);
 
 const totalSlides = images.length;
-//console.log(totalSlides)
+
 
 
 
@@ -119,7 +119,7 @@ function nextSlide(n, no) {
     slideIndex[no] = x.length;
   }
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
   }
   x[slideIndex[no]-1].style.display = "block";  
 }

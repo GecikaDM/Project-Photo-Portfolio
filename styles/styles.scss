@@ -75,8 +75,8 @@ section {
 } 
 
 .active {
-  visibility: visible;
-  
+  display: block;
+  //animation: showUp 2s ease-in-out;
 }
 
 @keyframes showUp {
@@ -101,10 +101,8 @@ nav {
     cursor: pointer;
     padding: 1rem;
     margin: .6rem 0;
-    //background-color: var(--color-grey1);
     width: 55px;
     height: 55px;
-    //border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +131,6 @@ nav {
         text-align: center;
         display: block;
         position: absolute;
-        //top: 0;
         opacity: 0;
         transition: all 0.3s ease-out;
       }
@@ -363,14 +360,14 @@ button.btn-open.btn:active {
     z-index: 10;
     font-size: 1rem;
     top: 50%;
-    left: 1rem;
+    left: 0.2rem;
     font-weight: 700;
   }
   .nav-btn-modal .next {
     position: absolute;
     z-index: 10;
     top: 50%;
-    right: 10px;
+    right: 0.2rem;
     font-size: 1rem;
   }
 
