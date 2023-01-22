@@ -391,6 +391,72 @@ button.btn-open.btn:active {
   transition: 0.3s;
 }
 
+/* contact section*/
+.contact-content-container {
+  display: flex;
+  padding: 3.5rem;
+}
+.contact-content-container .left-contact {
+  flex: 2;
+}
+.contact-content-container .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-container .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-container .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-container .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0;
+}
+.contact-content-container .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-container .right-contact .input-control {
+  margin: 1.5rem 0;
+}
+.contact-content-container .right-contact .input-control input, .contact-content-container .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: var(--color-grey1);
+  color: var(--color-white);
+  resize: none;
+}
+.contact-content-container .right-contact .input-control-two {
+  display: flex;
+}
+.contact-content-container .right-contact .input-control-two :last-child {
+  margin-left: 1.5rem;
+}
+.contact-content-container .right-contact .submit-btn {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-grey1);
+  color: var(--color-white);
+  padding: 0.8rem 1.1rem;
+  border-radius: 30px;
+  border: none;
+}
+.contact-content-container .right-contact .submit-btn:hover {
+  color: var(--color-yellow);
+  transform: scale(1);
+}
+
 /* independants components*/
 .main-title {
   text-align: center;
