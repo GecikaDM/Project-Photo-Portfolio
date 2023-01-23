@@ -112,8 +112,6 @@ nav a {
   cursor: pointer;
   padding: 1rem;
   margin: 0.6rem 0;
-  width: 55px;
-  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,9 +134,8 @@ nav a:after {
   content: "";
   font-size: 12px;
   letter-spacing: 2px;
-  width: 100%;
+  left: 6px;
   text-align: center;
-  display: block;
   position: absolute;
   opacity: 0;
   transition: all 0.3s ease-out;
@@ -417,6 +414,19 @@ button.btn-open.btn:active {
   margin: 0.3rem 0 !important;
   padding: 0;
 }
+.contact-content-container .left-contact .contact-info .location:hover {
+  color: var(--color-yellow);
+}
+.contact-content-container .left-contact .contact-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-content-container .left-contact .contact-icons .contact-icon i {
+  font-size: 1.7rem;
+}
+.contact-content-container .left-contact .contact-icons .contact-icon:hover {
+  color: var(--color-yellow);
+}
 .contact-content-container .right-contact {
   flex: 3;
   margin-left: 3rem;
@@ -434,7 +444,7 @@ button.btn-open.btn:active {
   border: none;
   width: 100%;
   background-color: var(--color-grey1);
-  color: var(--color-white);
+  color: var(--color-yellow);
   resize: none;
 }
 .contact-content-container .right-contact .input-control-two {
@@ -442,6 +452,10 @@ button.btn-open.btn:active {
 }
 .contact-content-container .right-contact .input-control-two :last-child {
   margin-left: 1.5rem;
+}
+.contact-content-container .right-contact .contact-btns {
+  display: flex;
+  justify-content: space-evenly;
 }
 .contact-content-container .right-contact .submit-btn {
   display: flex;

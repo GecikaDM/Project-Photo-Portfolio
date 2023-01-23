@@ -101,8 +101,8 @@ nav {
     cursor: pointer;
     padding: 1rem;
     margin: .6rem 0;
-    width: 55px;
-    height: 55px;
+    //width: 55px;
+    //height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,9 +127,9 @@ nav {
         content: '';
         font-size: 12px;
         letter-spacing: 2px;
-        width: 100%;
+        left: 6px;
         text-align: center;
-        display: block;
+        //display: block;
         position: absolute;
         opacity: 0;
         transition: all 0.3s ease-out;
@@ -415,28 +415,44 @@ button.btn-open.btn:active {
   padding: 3.5rem;
     .left-contact {
       flex: 2;
-      h4 {
-        margin-top: 1rem;
-        font-size: 2rem;
-        text-transform: uppercase;
-      }
-      p {
-        margin: 1rem 0;
-        line-height: 2rem;
-      }
-
-      .contact-info {
-        .contact-item {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          p {
-            margin: .3rem 0 !important;
-            padding: 0;
-          }
+        h4 {
+          margin-top: 1rem;
+          font-size: 2rem;
+          text-transform: uppercase;
+        }
+        p {
+          margin: 1rem 0;
+          line-height: 2rem;
         }
 
-      }
+        .contact-info {
+          .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+              margin: .3rem 0 !important;
+              padding: 0;
+            }
+          }
+          .location {
+            &:hover {
+              color: var(--color-yellow);
+            }
+          }
+        } 
+         .contact-icons {
+          display: flex;
+          justify-content: space-around;
+          .contact-icon {
+            i {
+              font-size: 1.7rem;
+            }
+            &:hover {
+            color: var(--color-yellow);
+            }
+          }
+        }
     }
 
 
@@ -456,7 +472,7 @@ button.btn-open.btn:active {
               border: none;
               width: 100%;
               background-color: var(--color-grey1);
-              color: var(--color-white);
+              color: var(--color-yellow);
               resize: none;
             }
             
@@ -465,9 +481,14 @@ button.btn-open.btn:active {
             display: flex;
             :last-child {
               margin-left: 1.5rem;
+            }
           }
 
+           .contact-btns {
+            display: flex;
+            justify-content: space-evenly;
           }
+
            .submit-btn {
               display: flex;
               justify-content: center;
@@ -479,10 +500,10 @@ button.btn-open.btn:active {
                &:hover {
                 color: var(--color-yellow);
                 transform: scale(1);
-          }
-    }
+                }     
+            }
 
-  }
+      }
 }
 
 /* independants components*/
