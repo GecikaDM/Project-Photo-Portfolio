@@ -16,6 +16,15 @@
   --fontFamily: "Montserrat", sans-serif;
 }
 
+.light-mode {
+  --color-primary: #fff;
+  --color-secondary: #27ae60;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-yellow: #c23616;
+  --color-grey1: #ecf0f1;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: var(--fontFamily);
@@ -158,6 +167,31 @@ nav a.contact-link:after {
 
 .active-btn {
   color: var(--color-yellow);
+}
+
+.theme-btn {
+  top: 5%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-grey1);
+  position: fixed;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+.theme-btn i {
+  font-size: 1rem;
+  color: var(--color-white);
+  pointer-events: none;
 }
 
 /* header content */

@@ -56,6 +56,14 @@ function pageTransition() {
       element.classList.add('active');
     }
   });
+
+  // toggle theme btn
+
+  const themeBtn = document.querySelector('.theme-btn');
+  themeBtn.addEventListener('click', () => {
+    let element = document.body;
+    element.classList.toggle('light-mode')
+  });
 }
 pageTransition();
 
@@ -123,4 +131,6 @@ function nextSlide(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+
+
 
