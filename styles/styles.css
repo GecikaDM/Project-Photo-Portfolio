@@ -527,4 +527,41 @@ button.btn-open.btn:active {
   transform: translate(-50%, -50%);
   font-size: 5rem;
   font-weight: 800;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .header-right-side {
+    padding: 1rem 2rem 1rem 2rem !important;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .header-right-side {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .theme-btn {
+    width: 30px;
+    height: 30px;
+  }
+  nav a:after {
+    font-size: 8px;
+  }
+  .myNavBar {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey1);
+  }
+  .navbar-items {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=styles.css.map */
