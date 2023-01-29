@@ -8,7 +8,7 @@ const mainContent = document.querySelector(".main-content");
 const modal = document.querySelectorAll('.modal');
 //console.log(modal);
 const openEls = document.querySelectorAll('[data-open]');
-////console.log(openEls);
+
 const closeModal = document.querySelectorAll('.close-modal');
 //console.log(closeModal);
 
@@ -65,11 +65,11 @@ function pageTransition() {
     element.classList.toggle('light-mode')
   });
 }
+
 pageTransition();
 
 
 /* modal slide open*/
-
 
 
 openEls.forEach(els => {
