@@ -231,7 +231,7 @@ nav a.contact-link:after {
 .header-content .header-right-side p.introduction {
   margin: 1.5rem 0;
   line-height: 2rem;
-  text-align: auto;
+  text-align: justify;
 }
 
 /* about section*/
@@ -542,6 +542,11 @@ button.btn-open.btn:active {
   .about-container .about-left-side {
     padding: 4.5rem 2.5rem;
   }
+  .about-container h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem;
+  }
   .about-container .text-about {
     text-align: justify;
   }
@@ -566,11 +571,11 @@ button.btn-open.btn:active {
   }
   .contact-content-container {
     flex-direction: column;
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1rem 2.5rem 1rem;
   }
   .contact-content-container .right-contact {
     margin-left: 0;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
   .contact-content-container .left-contact h4 {
     font-size: 1.2rem;
