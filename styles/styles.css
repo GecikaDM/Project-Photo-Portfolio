@@ -238,6 +238,7 @@ nav a.contact-link:after {
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   padding: 3.5rem 0 5rem 0;
 }
 .about-container .about-right-side .img-container {
@@ -252,12 +253,20 @@ nav a.contact-link:after {
   width: 35%;
   align-self: center;
 }
-.about-container .about-right-side .img2 {
-  width: 35%;
-  filter: grayscale(10);
-  -webkit-clip-path: ellipse(50% 45%);
-          clip-path: ellipse(50% 45%);
-  align-self: center;
+.about-container .about-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+}
+.about-container .about-left-side h4 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+}
+.about-container .about-left-side .text-about {
+  text-align: justify;
+  padding: 1rem;
 }
 
 /* portfolio section*/
