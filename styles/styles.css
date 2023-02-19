@@ -236,10 +236,10 @@ nav a.contact-link:after {
 
 /* about section*/
 .about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 3.5rem 0 5rem 0;
+  height: 100vh;
 }
 .about-container .about-right-side .img-container {
   display: flex;
@@ -250,29 +250,27 @@ nav a.contact-link:after {
 .about-container .about-right-side .img1 {
   -webkit-clip-path: ellipse(50% 35%);
           clip-path: ellipse(50% 35%);
-  width: 35%;
+  width: 20%;
   align-self: center;
 }
 .about-container .about-left-side {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: flex-end;
+  padding: 1rem 10rem;
 }
-.about-container .about-left-side h4 {
+.about-container .about-left-side h3 {
   text-align: center;
   margin-bottom: 1.2rem;
   text-transform: capitalize;
 }
 .about-container .about-left-side .text-about {
+  font-size: 1.5rem;
   text-align: justify;
-  padding: 1rem;
 }
 
 /* portfolio section */
 .portfolio-text {
   padding: 2rem 0;
   text-align: center;
+  margin: 1rem 0 1.5rem 0;
 }
 
 .portfolio-items {
@@ -347,6 +345,9 @@ nav a.contact-link:after {
 .contact-content-container {
   display: flex;
   padding: 3.5rem;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .contact-content-container .left-contact {
   flex: 2;
@@ -430,6 +431,7 @@ nav a.contact-link:after {
 /* independants components*/
 .main-title {
   text-align: center;
+  margin-top: 2 rem;
 }
 .main-title h2 {
   position: relative;
@@ -483,11 +485,14 @@ nav a.contact-link:after {
   }
   .about-container .about-right-side {
     width: 90%;
-    padding-top: 2.5rem;
+    padding-top: 0;
     margin: 0 auto;
   }
+  .about-container .about-right-side .img-container img {
+    width: 35%;
+  }
   .about-container .about-left-side {
-    padding: 4.5rem 2.5rem;
+    padding: 4rem 2.5rem;
   }
   .about-container h4 {
     font-size: 1.2rem;
@@ -505,9 +510,16 @@ nav a.contact-link:after {
   .btn-container {
     margin-top: 2rem;
   }
+  .portfolio-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio-items .portfolio-item img {
+    height: 250px;
+  }
   .contact-content-container {
     flex-direction: column;
     padding: 1rem 1rem 2.5rem 1rem;
+    height: auto;
   }
   .contact-content-container .right-contact {
     margin-left: 0;
