@@ -296,7 +296,7 @@ nav {
         }
         .text-about {
           font-size: 1.5rem;
-          text-align: justify;
+          text-align: center;
         }
     }
 }
@@ -371,6 +371,7 @@ nav {
 
     }
 }
+
 .portfolio-item:hover  .image-portfolio-item-hover{
   opacity: 0.9;
   transform: scale(1);
@@ -378,6 +379,13 @@ nav {
 }
 
 /* blog section */
+
+.blog-quote {
+  padding: 1.5rem;
+  margin: 2rem auto;
+  width: 80%;
+  text-align: center;
+}
 
 .container-grid {
   width: 90%;
@@ -434,15 +442,15 @@ nav {
       grid-column-end: 9;
       grid-row-start: 6;
       grid-row-end: 9;
+      
+      /** Alternative Syntax **/
+      /* grid-column: 1 / span 4; */
+      /* grid-row: 6 / span 3; */
     }
 
   }
 
 }
-
-
-
-
 
 /* contact section*/
 
