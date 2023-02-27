@@ -391,18 +391,36 @@ nav a.contact-link:after {
 }
 .container-grid .gallery .gallery-item-5 {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 5;
   grid-row-start: 6;
-  grid-row-end: 9;
+  grid-row-end: 10;
 }
 .container-grid .gallery .gallery-item-6 {
-  grid-column-start: 4;
-  grid-column-end: 9;
+  grid-column-start: 5;
+  grid-column-end: 7;
   grid-row-start: 6;
   grid-row-end: 9;
   /** Alternative Syntax **/
   /* grid-column: 1 / span 4; */
   /* grid-row: 6 / span 3; */
+}
+.container-grid .gallery .gallery-item-7 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+.container-grid .gallery .gallery-item-8 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+.container-grid .gallery .gallery-item-9 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 10;
 }
 
 /* contact section*/
