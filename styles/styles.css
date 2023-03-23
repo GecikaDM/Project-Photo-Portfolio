@@ -357,7 +357,7 @@ nav a.contact-link:after {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: 5px;
+  grid-gap: 4px;
 }
 .container-grid .gallery .gallery-img {
   width: 100%;
