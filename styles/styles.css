@@ -356,7 +356,7 @@ nav a.contact-link:after {
 .container-grid .gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-rows: repeat(8, 6vw);
   grid-gap: 4px;
 }
 .container-grid .gallery .gallery-img {
@@ -421,6 +421,24 @@ nav a.contact-link:after {
   grid-column-end: 9;
   grid-row-start: 9;
   grid-row-end: 10;
+}
+.container-grid .gallery .gallery-item-10 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 12;
+}
+.container-grid .gallery .gallery-item-11 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 10;
+  grid-row-end: 12;
+}
+.container-grid .gallery .gallery-item-12 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 12;
 }
 
 /* contact section*/
